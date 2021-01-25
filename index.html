@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>
+    Project: Library | The Odin Project
+  </title>
+  <link rel="stylesheet" href="/stylesheet.css"/>
+  </head>
+  <body>
+    <h1>Book Library</h1>
+    
+    <div class="openBtn">
+      <button class="openButton" onclick="openForm()"><strong>Add a Book!</strong></button>
+    </div>
+    <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <form class="formContainer">
+          <h2>Input the Book's info:</h2>
+          <label for="title">
+            <strong>Title</strong>
+          </label>
+          <input type="text" id="title" placeholder="Book Title" name="title" required>
+          <label for="author">
+            <strong>Author</strong>
+          </label>
+          <input type="text" id="author" placeholder="Author's Name" name="author" required>
+          <label for="pages">
+            <strong>Pages</strong>
+          </label>
+          <input type="text" id="pages" placeholder="Number of pages" name="pages" required>
+          <label for="read">
+            <strong>Read it?</strong>
+          </label>
+
+          <p><strong><input type="checkbox" id="checkRead"  name = "checkRead">Check if you've read the book.</strong></p>
+          <p><br></p>
+          <button type="button" class="btn" id="addBook" onclick="addBookToLibrary()">Add to Library</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+    <div class="grid-container" id="grid-container">
+
+    </div>
+  </body>
+  <script src="/library.js"></script>
+</html>
